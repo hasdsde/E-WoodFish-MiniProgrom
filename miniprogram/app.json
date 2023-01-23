@@ -15,6 +15,8 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
+    "selectedColor": "#1296db",
+    "color": "#aaa",
     "list": [
       {
         "pagePath": "pages/index/index",
