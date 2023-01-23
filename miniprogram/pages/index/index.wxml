@@ -1,4 +1,8 @@
 <!--index.wxml-->
-<view class="container">
-  首页
+<view>
+  <text>你的分数:111</text>
+  <view class="images">
+    <image src="../static/woodfish.png" mode="aspectFit"/>
+  </view>
+  <button class="btn" hover-class="hbtn" bindtap="clickBtn">点击!</button>
 </view>

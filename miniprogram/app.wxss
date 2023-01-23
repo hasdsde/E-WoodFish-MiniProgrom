@@ -1,10 +1,18 @@
 /**app.wxss**/
-.container {
+.images {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
+  /* padding: 200rpx 0; */
   box-sizing: border-box;
+  margin: 50rpx 0;
 } 
+.btn{
+  background-color: #1296db;
+  color: white;
+}
+.hbtn{
+  background-color: #1386c2;
+}

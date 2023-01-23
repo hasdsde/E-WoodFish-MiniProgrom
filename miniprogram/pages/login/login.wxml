@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+<view class="bg">
+  <view class="body">
+    <view class="login_title">
+      <text style="font-size: large;font-weight: bold;">登录 注册</text>
+    </view>
+    <view>
+      <text>用户名：</text>
+      <input class="Login_input" placeholder="输入用户名" />
+    </view>
+    <view>
+      <text> 密码： </text>
+      <input class="Login_input" password placeholder="输入密码" />
+    </view>
+    <view>
+      <button class="lbtn" type="default">注册 </button>
+      <button class="lbtn" type="primary">登录 </button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+/* pages/login/login.wxss */
+.body{
+  margin-top: 100rpx;
+  margin: 20rpx;
+  padding: 10rpx;
+  text-align: center;
+  border: solid 1px #bbb;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2%;
+}
+.bg{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top right, #fbc2eb, #a6c1ea);
+}
+.login_title{
+  text-align: center;
+  margin: 30rpx;
+}
+.Login_input{
+  border: #bbb 1px solid;
+  padding: 10rpx;
+  margin: 20rpx;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  text-align: left;
+}
+.lbtn{
+  margin: 20px;
+}

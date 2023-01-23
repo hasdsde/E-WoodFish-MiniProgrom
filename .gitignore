@@ -1,0 +1,6 @@
+project.config.json
+project.private.config.json
+/typings/*
+package.json
+package.json
+tsconfig.json

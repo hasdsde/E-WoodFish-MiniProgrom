@@ -4,12 +4,13 @@
     "pages/logs/logs",
     "pages/item/item",
     "pages/top/top",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "赛博木鱼",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
@@ -42,7 +43,6 @@
         "iconPath": "pages/static/about.png",
         "selectedIconPath": "pages/static/about_active.png"
       }
-
     ]
   }
 }
