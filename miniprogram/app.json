@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/item/item",
+    "pages/top/top",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/static/home.png",
+        "selectedIconPath": "pages/static/home_active.png"
+      },
+      {
+        "pagePath": "pages/item/item",
+        "text": "物品",
+        "iconPath": "pages/static/box.png",
+        "selectedIconPath": "pages/static/box_active.png"
+      },
+      {
+        "pagePath": "pages/top/top",
+        "text": "排行榜",
+        "iconPath": "pages/static/top.png",
+        "selectedIconPath": "pages/static/top_active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "pages/static/about.png",
+        "selectedIconPath": "pages/static/about_active.png"
+      }
+
+    ]
+  }
+}
