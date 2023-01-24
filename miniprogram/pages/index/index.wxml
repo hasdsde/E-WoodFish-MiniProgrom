@@ -1,6 +1,11 @@
 <!--index.wxml-->
 <view>
-  <text>{{username}}  分数:{{score}} </text>
+<view>
+  <text>{{username}}  分数:{{score}}  </text>
+  <button style="vertical-align: middle;float: right;" bindtap="logout" type="warn" size="mini">登出</button>
+</view>
+  
+  
   <view class="images">
     <image src="../static/woodfish.png" mode="aspectFit"/>
   </view>

@@ -37,6 +37,7 @@ Page({
         success(res:any){
           //登录成功
           if (res.data.code==200) {
+            console.log(res.data)
             wx.setStorage({
               key:'username',
               data:res.data.data.username
