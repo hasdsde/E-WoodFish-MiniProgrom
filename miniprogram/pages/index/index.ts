@@ -8,6 +8,7 @@ Page({
     score: 0
   },
   onLoad() {
+    var that:any = this
     console.log('==========onLoad==========')
     wx.getStorage({
       key: 'username',
@@ -19,10 +20,22 @@ Page({
             duration: 1000
           })
         } else {
+          //获取信息成功
           wx.showToast({
             title: '获取信息成功',
             icon: 'success',
             duration: 1000
+          })
+          that.setData({
+            username:res.data
+          })
+          wx.getStorage({
+            key:'score',
+            success(res:any){
+              that.setData({
+                score:res.data
+              })
+            }
           })
         }
       },

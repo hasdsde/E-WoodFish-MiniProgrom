@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view>
-  <text>你的分数:111</text>
+  <text>{{username}}  分数:{{score}} </text>
   <view class="images">
     <image src="../static/woodfish.png" mode="aspectFit"/>
   </view>
