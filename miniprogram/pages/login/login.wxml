@@ -6,15 +6,15 @@
     </view>
     <view>
       <text>用户名：</text>
-      <input class="Login_input" placeholder="输入用户名" />
+      <input class="Login_input" placeholder="输入用户名" bindinput="getUserName" />
     </view>
     <view>
       <text> 密码： </text>
-      <input class="Login_input" password placeholder="输入密码" />
+      <input class="Login_input" password placeholder="输入密码" bindinput="getPassword" />
     </view>
     <view>
-      <button class="lbtn" type="default">注册 </button>
-      <button class="lbtn" type="primary">登录 </button>
+      <button class="lbtn" type="default" bindtap="handeleRegister">注册 </button>
+      <button class="lbtn" type="primary" bindtap="handleLogin">登录 </button>
     </view>
   </view>
 </view>
