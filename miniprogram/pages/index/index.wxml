@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view>
 <view>
-  <text>{{username}}  分数:{{score}}  </text>
+  <text style="font-size: small;color: grey;">{{username}}  分数: {{score}}  </text>
   <button style="vertical-align: middle;float: right;" bindtap="logout" type="warn" size="mini">登出</button>
 </view>
   

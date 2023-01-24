@@ -5,14 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    username: '',
+    score: 0,
+    items:[]
   },
-
+  handleCost:function (e:any) {
+    console.log(e)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    var that = this
+    wx.request({
+      url:'https://muyu.hasdsd.cn/api/item/getAll',
+      success(res:any){
+        that.data.items =res.data.data
+        that.setData({
+          items:res.data.data
+        })
+      }
+    })
   },
 
   /**
@@ -26,7 +39,25 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    var that:any = this
+    wx.getStorage({
+      key:'username',
+      success(res:any){
+        // that.data.username = res.data
+        that.setData({
+          username:res.data
+        })
+      }
+    })
+    wx.getStorage({
+      key:'score',
+      success(res:any){
+        // that.data.score = res.data
+        that.setData({
+          score:res.data
+        })
+      }
+    })
   },
 
   /**

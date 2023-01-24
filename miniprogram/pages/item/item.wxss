@@ -1,1 +1,24 @@
 /* pages/top/top.wxss */
+.body{
+  margin-top: 100rpx;
+  margin: 20rpx;
+  padding: 10rpx;
+}
+.item{
+  max-width: 30vw;
+  text-align: center;
+  display: inline-block;
+}
+.main{
+  margin: 20rpx;
+  text-align: center;
+}
+.title{
+  display: inline-block;
+}
+.desc{
+  display: inline-block;
+  font-size: small;
+  color: #aaa;
+  margin: 20rpx;
+}

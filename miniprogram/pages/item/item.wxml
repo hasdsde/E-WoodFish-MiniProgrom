@@ -1,2 +1,17 @@
 <!--pages/item/item.wxml-->
-<text>物品</text>
+<view class="body">
+  <text style="font-size: small;color: grey;">{{username}}  分数: {{score}}  </text>
+
+  <view class="main">
+    <view class="item" wx:for="{{items}}" wx:for-indent="index" wx:for-item="item">
+      <image style="max-width: 20vw;max-height: 20vw;" src="../static/box_active.png" mode="aspectFit"/>
+      <view >
+        <text class="title">{{item.name}}</text>
+      </view>
+      <text class="desc">{{item.description}}</text>
+      <view>
+        <button type="primary" bindtap="handleCost" data-value="{{index}}" size="mini">使用</button>
+      </view>
+    </view>
+  </view>
+</view>
