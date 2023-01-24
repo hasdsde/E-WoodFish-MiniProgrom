@@ -5,7 +5,11 @@
   align-items: center;
   color: #aaa;
 }
-
+.body{
+  margin-top: 100rpx;
+  margin: 20rpx;
+  padding: 10rpx;
+}
 .userinfo-avatar {
   overflow: hidden;
   width: 128rpx;

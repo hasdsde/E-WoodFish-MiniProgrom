@@ -1,1 +1,30 @@
 /* pages/top/top.wxss */
+.body{
+  margin-top: 100rpx;
+  margin: 20rpx;
+  padding: 10rpx;
+}
+.main{
+  text-align: center;
+  margin-top: 50rpx;
+}
+.head{
+  width: 25vw;
+  height: 4vh;
+  display: inline-block;
+  background-color: rgb(18, 150, 219);
+  padding: 20rpx 20rpx;
+  text-align: center;
+  vertical-align: middle;
+  border: #ccc solid 1px;
+  color: white;
+}
+.content{
+  width: 25vw;
+  height: 4vh;
+  display: inline-block;
+  padding: 20rpx 20rpx;
+  text-align: center;
+  vertical-align: middle;
+  border: #ccc solid 1px;
+}

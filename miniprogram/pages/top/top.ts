@@ -5,14 +5,40 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    username: '',
+    score: 0,
+    tops:[]
   },
-
+  handleFlash:function (e:any) {
+    var that = this
+    wx.request({
+      url:'https://muyu.hasdsd.cn/api/user/top',
+      success(res:any){
+        that.data.tops =res.data.data
+        that.setData({
+          tops:res.data.data
+        })
+      }
+    })
+    wx.showToast({
+      icon:'success',
+      title:'刷新完成'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    var that = this
+    wx.request({
+      url:'https://muyu.hasdsd.cn/api/user/top',
+      success(res:any){
+        that.data.tops =res.data.data
+        that.setData({
+          tops:res.data.data
+        })
+      }
+    })
   },
 
   /**
@@ -26,7 +52,34 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    var that:any = this
+    wx.getStorage({
+      key:'username',
+      success(res:any){
+        // that.data.username = res.data
+        that.setData({
+          username:res.data
+        })
+      }
+    })
+    wx.getStorage({
+      key:'score',
+      success(res:any){
+        // that.data.score = res.data
+        that.setData({
+          score:res.data
+        })
+      }
+    })
+    wx.request({
+      url:'https://muyu.hasdsd.cn/api/user/top',
+      success(res:any){
+        that.data.tops =res.data.data
+        that.setData({
+          tops:res.data.data
+        })
+      }
+    })
   },
 
   /**

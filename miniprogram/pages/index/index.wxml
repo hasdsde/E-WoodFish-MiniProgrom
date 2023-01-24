@@ -1,13 +1,13 @@
 <!--index.wxml-->
-<view>
-<view>
-  <text style="font-size: small;color: grey;">{{username}}  分数: {{score}}  </text>
-  <button style="vertical-align: middle;float: right;" bindtap="logout" type="warn" size="mini">登出</button>
-</view>
-  
-  
+<view class="body">
+  <view>
+    <text style="font-size: small;color: grey;">{{username}} 分数: {{score}} </text>
+    <button style="vertical-align: middle;float: right;" bindtap="logout" type="warn" size="mini">登出</button>
+  </view>
+
+
   <view class="images">
-    <image src="../static/woodfish.png" mode="aspectFit"/>
+    <image src="../static/woodfish.png" mode="aspectFit" />
   </view>
   <button class="btn" hover-class="hbtn" bindtap="clickBtn">点击!</button>
 </view>

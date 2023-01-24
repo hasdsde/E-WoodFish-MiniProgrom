@@ -8,7 +8,6 @@ Page({
     score: 0
   },
   onShow(){
-    console.log('重新加载')
     var that:any = this
     wx.getStorage({
       key:'username',

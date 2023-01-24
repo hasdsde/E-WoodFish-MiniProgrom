@@ -1,2 +1,17 @@
 <!--pages/top/top.wxml-->
-<text>排行榜</text>
+<view class="body">
+  <text style="font-size: small;color: grey;">{{username}}  分数: {{score}}  </text>
+  <button style="float: right;" type="primary" bindtap="handleFlash" size="mini">刷新</button>
+  <view class="main">
+    <view>
+      <text class="head">排名</text>
+      <text class="head">用户</text>
+      <text class="head">分数</text>
+    </view>
+    <view wx:for="{{tops}}" wx:for-ident="index" wx:for-item="top">
+      <text class="content">{{index+1}}</text>
+      <text class="content">{{top.username}}</text>
+      <text class="content">{{top.score}}</text>
+    </view>
+  </view>
+</view>

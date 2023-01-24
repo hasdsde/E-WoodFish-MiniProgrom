@@ -87,11 +87,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
+    console.log('重新加载');
     var that:any = this
     wx.getStorage({
       key:'username',
       success(res:any){
-        // that.data.username = res.data
+        that.data.username = res.data
         that.setData({
           username:res.data
         })
@@ -100,7 +101,7 @@ Page({
     wx.getStorage({
       key:'score',
       success(res:any){
-        // that.data.score = res.data
+        that.data.score = res.data
         that.setData({
           score:res.data
         })
