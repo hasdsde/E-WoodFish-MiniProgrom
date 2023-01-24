@@ -16,6 +16,13 @@ Page({
       wx.request({
         url:'https://muyu.hasdsd.cn/api/cost/one?username='+this.data.username+'&cost='+e.currentTarget.dataset.cost+'&itemid='+e.currentTarget.dataset.id+'&palt=1',
         success(res:any){
+          if (e.currentTarget.dataset.id==1) {
+            that.data.name = '佛'
+          }else if(e.currentTarget.dataset.id==2){
+            that.data.name = '韩'
+          }else{
+            that.data.name = '宝'
+          }
           if (res.data.code==200) {
             //消费成功
             wx.showModal({
