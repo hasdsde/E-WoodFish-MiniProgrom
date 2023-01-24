@@ -5,7 +5,7 @@
   padding: 10rpx;
 }
 .item{
-  max-width: 30vw;
+  max-width: 25vw;
   text-align: center;
   display: inline-block;
 }
@@ -20,5 +20,10 @@
   display: inline-block;
   font-size: small;
   color: #aaa;
-  margin: 20rpx;
+  margin-top: 20rpx;
+}
+.cost{
+  margin-bottom: 1vh;
+  display: inline-block;
+  font-size: small;
 }

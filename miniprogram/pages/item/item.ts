@@ -7,10 +7,51 @@ Page({
   data: {
     username: '',
     score: 0,
-    items:[]
+    items:[],
+    name:''
   },
   handleCost:function (e:any) {
-    console.log(e)
+    var that = this
+    if (this.data.score>e.currentTarget.dataset.cost) {
+      wx.request({
+        url:'https://muyu.hasdsd.cn/api/cost/one?username='+this.data.username+'&cost='+e.currentTarget.dataset.cost+'&itemid='+e.currentTarget.dataset.id+'&palt=1',
+        success(res:any){
+          if (res.data.code==200) {
+            //消费成功
+            wx.showModal({
+              title:'使用完成',
+              content:that.data.name+'不在乎',
+              showCancel:false,
+              success (res) {
+                if (res.confirm) {
+                  wx.showToast({
+                    title: '此处应该有音乐',
+                    icon: 'success',
+                    duration: 2000
+                  })
+                }
+              }
+            })
+            that.data.score = that.data.score-e.currentTarget.dataset.cost
+            that.setData({
+              score:that.data.score
+            })
+            wx.setStorage({
+              key:'score',
+              data:that.data.score
+            })
+          }else{
+            wx.showModal({
+              title:'提示',content:'余额不足!',showCancel:false,
+            })
+          }
+        }
+      })
+    }else{
+      wx.showModal({
+        title:'提示',content:'余额不足!',showCancel:false
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

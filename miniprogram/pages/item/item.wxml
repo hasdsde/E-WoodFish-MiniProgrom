@@ -9,8 +9,9 @@
         <text class="title">{{item.name}}</text>
       </view>
       <text class="desc">{{item.description}}</text>
+      <text class="cost">花费： {{item.cost}}</text>
       <view>
-        <button type="primary" bindtap="handleCost" data-value="{{index}}" size="mini">使用</button>
+        <button type="primary" bindtap="handleCost" data-id="{{item.id}}" data-cost="{{item.cost}}" size="mini">使用</button>
       </view>
     </view>
   </view>
