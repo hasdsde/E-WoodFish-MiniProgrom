@@ -1,11 +1,10 @@
 <!--index.wxml-->
+<!-- 新版本1.0.1添加了这条注释 -->
 <view class="body">
   <view>
     <text style="font-size: small;color: grey;">{{username}} 分数: {{score}} </text>
     <button style="vertical-align: middle;float: right;" bindtap="logout" type="warn" size="mini">登出</button>
   </view>
-
-
   <view class="images">
     <image src="../static/woodfish.png" mode="aspectFit" />
   </view>
